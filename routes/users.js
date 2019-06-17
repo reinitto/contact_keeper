@@ -52,10 +52,10 @@ router.post(
           id: user.id
         }
       };
-
+      const jwtsecret = process.env.JWTSECRET || config.get('jwtSecret');
       jwt.sign(
         payload,
-        config.get('jwtSecret'),
+        jwtsecret,
         {
           expiresIn: 36000
         },
