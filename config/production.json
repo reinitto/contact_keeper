@@ -1,4 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://reinitto:baiglabais@cluster0-rglf2.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "secretstring"
-}

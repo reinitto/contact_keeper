@@ -49,7 +49,7 @@ router.post(
       await user.save();
       const payload = {
         user: {
-          id: user._id
+          id: user.id
         }
       };
 
