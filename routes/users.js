@@ -53,6 +53,8 @@ router.post(
         }
       };
 
+      console.log('user in users:', user);
+
       jwt.sign(
         payload,
         process.env.JWT_SECRET,
