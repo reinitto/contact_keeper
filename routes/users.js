@@ -1,6 +1,5 @@
 const express = require('express');
 const bcrypt = require('bcryptjs');
-const config = require('config');
 const jwt = require('jsonwebtoken');
 const router = express.Router();
 const { check, validationResult } = require('express-validator/check');
@@ -52,8 +51,6 @@ router.post(
           id: user.id
         }
       };
-
-      console.log('user in users:', user);
 
       jwt.sign(
         payload,
