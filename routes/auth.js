@@ -54,7 +54,7 @@ router.post(
           id: user.id
         }
       };
-      const jwtsecret = config.get('jwtSecret') || process.env.JWTSECRET;
+      const jwtsecret = process.env.JWTSECRET || config.get('jwtSecret');
       jwt.sign(
         payload,
         jwtsecret,
